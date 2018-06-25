@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.14
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Dec 20, 2016 at 08:03 PM
+- Server version: 5.6.26
+- PHP Version: 5.6.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="quizmalaysia" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="admin">
+                CREATE TABLE `admin` (
+                  `username` varchar(100) NOT NULL,
+                  `password` varchar(100) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="quiz">
+                CREATE TABLE `quiz` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `question` varchar(10000) NOT NULL,
+                  `answer1` varchar(1000) NOT NULL,
+                  `answer2` varchar(1000) NOT NULL,
+                  `trueAns` varchar(1000) NOT NULL,
+                  UNIQUE KEY `id` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'quizmalaysia'
+    -->
+    <database name="quizmalaysia">
+        <!-- Table admin -->
+        <table name="admin">
+            <column name="username">admin</column>
+            <column name="password">password</column>
+        </table>
+        <table name="admin">
+            <column name="username">fadlan</column>
+            <column name="password">lily</column>
+        </table>
+        <!-- Table quiz -->
+        <table name="quiz">
+            <column name="id">74</column>
+            <column name="question">What is the tallest building in Malaysia?</column>
+            <column name="answer1">KLCC  </column>
+            <column name="answer2">KL Tower</column>
+            <column name="trueAns">KLCC  </column>
+        </table>
+        <table name="quiz">
+            <column name="id">75</column>
+            <column name="question">How Many Stripes are in the Malaysian Flag?</column>
+            <column name="answer1">15  </column>
+            <column name="answer2">14</column>
+            <column name="trueAns">14</column>
+        </table>
+        <table name="quiz">
+            <column name="id">76</column>
+            <column name="question">What The Big Holiday in Malaysia?</column>
+            <column name="answer1">Chinese New Year</column>
+            <column name="answer2">Eid</column>
+            <column name="trueAns">Eid</column>
+        </table>
+        <table name="quiz">
+            <column name="id">77</column>
+            <column name="question">What is the Capital in Malaysia?</column>
+            <column name="answer1">Kuala Lumpur,KL</column>
+            <column name="answer2">Putrajaya,PJ</column>
+            <column name="trueAns">Kuala Lumpur,KL</column>
+        </table>
+        <table name="quiz">
+            <column name="id">78</column>
+            <column name="question">What is The Second Tallest Building in Malaysia?</column>
+            <column name="answer1">KL Tower</column>
+            <column name="answer2">Malaysia City Center  </column>
+            <column name="trueAns">KL Tower</column>
+        </table>
+        <table name="quiz">
+            <column name="id">79</column>
+            <column name="question">What is the gates to Kuala Lumpur,KL?</column>
+            <column name="answer1">Boarder Gateway</column>
+            <column name="answer2">Plaza Tol</column>
+            <column name="trueAns">Plaza Tol</column>
+        </table>
+        <table name="quiz">
+            <column name="id">81</column>
+            <column name="question">Which country seceded from Malaysia in 1965?</column>
+            <column name="answer1">Singapore</column>
+            <column name="answer2">Taiwan</column>
+            <column name="trueAns">Taiwan</column>
+        </table>
+        <table name="quiz">
+            <column name="id">82</column>
+            <column name="question">What is the traditional flower in Malaysia?</column>
+            <column name="answer1">Hibuscus</column>
+            <column name="answer2">Sun Flower</column>
+            <column name="trueAns">Hibuscus</column>
+        </table>
+        <table name="quiz">
+            <column name="id">83</column>
+            <column name="question">What does &quot;and&quot; mean in Malay?</column>
+            <column name="answer1">Sebab</column>
+            <column name="answer2">Dengan</column>
+            <column name="trueAns">Dengan</column>
+        </table>
+        <table name="quiz">
+            <column name="id">84</column>
+            <column name="question">What does the crescent mean on the flag?</column>
+            <column name="answer1">Freedom</column>
+            <column name="answer2">Islam</column>
+            <column name="trueAns">Islam</column>
+        </table>
+        <table name="quiz">
+            <column name="id">85</column>
+            <column name="question">How many points are on the star?</column>
+            <column name="answer1">14</column>
+            <column name="answer2">13</column>
+            <column name="trueAns">14</column>
+        </table>
+        <table name="quiz">
+            <column name="id">86</column>
+            <column name="question">What does the blue canton on the flag mean?</column>
+            <column name="answer1">Equal status in the Federation</column>
+            <column name="answer2">We are cool</column>
+            <column name="trueAns">Equal status in the Federation</column>
+        </table>
+    </database>
+</pma_xml_export>
